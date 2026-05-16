@@ -1,0 +1,7 @@
+{
+  "roi_fire": [[100,200],[400,500]],
+  "roi_fence": [[50,100],[600,400]],
+  "threshold_car": 180,
+  "threshold_person": 120,
+  "white_list": ["粤A12345"]
+}

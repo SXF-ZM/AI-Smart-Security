@@ -1,0 +1,23 @@
+version: "3"
+services:
+  redis:
+    image: redis:6
+    ports:
+      - "6379:6379"
+  emqx:
+    image: emqx:4.4
+    ports:
+      - "1883:1883"
+  edge:
+    build: .
+    depends_on:
+      - redis
+      - emqx
+  center:
+    build: .
+    command: python run_center.py
+    ports:
+      - "8000:8000"
+    depends_on:
+      - redis
+      - emqx

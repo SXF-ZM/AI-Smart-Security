@@ -1,0 +1,17 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.onnx
+*.pt
+*.jpg
+*.png
+*.mp4
+media/
+static/upload/
+static/result/
+.idea/
+.vscode/
+*.log
+.DS_Store
